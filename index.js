@@ -3,8 +3,8 @@ const Discord = require('discord.js');
  
 // Configure Packages
 const client = new Discord.Client();
-const prefix = ''; // If you would like to add commands to the bot set this here
-const ownerID = ''; // Set your ID in here. Do it by copy and pasting it through discord.
+const prefix = '+'; // If you would like to add commands to the bot set this here
+const ownerID = '654669770549100575'; // Set your ID in here. Do it by copy and pasting it through discord.
 const active = new Map();
 
 client.on("error", (e) => console.error(e));
@@ -153,4 +153,4 @@ client.on('message', async message => {
 })
  
 
-client.login(""); //Add the token to your bot user here
+client.login("NzI2Nzk1OTcwOTc2Njc4MDAx.XxRJ-A.2SikriiyqPjU2ybs_TgYk_yoMiQ"); //Add the token to your bot user here
