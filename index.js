@@ -38,7 +38,7 @@ client.on('message', async message => {
     if (message.guild === null) {
         // Fetch Activity Info
         let active = await db.fetch(`support_${message.author.id}`);
-        let guild = client.guilds.get(''); // Your Server ID
+        let guild = client.guilds.get('726055475178635305'); // Your Server ID
         let channel, found = true;
         try {
             if (active) client.channels.get(active.channelID).guild;
@@ -52,7 +52,7 @@ client.on('message', async message => {
             let everyone = guild.roles.find("name","@" + "everyone");
             let bot = guild.roles.find("name","Bot");
             channel = await guild.createChannel(`${message.author.username}-${message.author.discriminator}`);
-                channel.setParent(''); // Management Category ID
+                channel.setParent('726287972638523402'); // Management Category ID
                 channel.setTopic(`_complete to close the Ticket | ModMail for ${message.author.tag} | ID: ${message.author.id}`);
                 channel.overwritePermissions(modRoles, {
                     VIEW_CHANNEL: true,
